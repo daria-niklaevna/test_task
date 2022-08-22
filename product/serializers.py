@@ -15,16 +15,16 @@ class ImageSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = ImageProduct
-        fields = ('id', 'name', 'image')
+        fields = ('id', 'title', 'image')
 
 
 class ProductSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Product
-        fields = ('id', 'name', 'price', 'user', 'image', 'data')
+        fields = ('id', 'title', 'price', 'author', 'image', 'creation_date')
 
 
 class ProductListSerializer(ProductSerializer):
     image = ImageSerializer(many=True, read_only=True)
-    user = UserSerializer(many=False, read_only=True)
+    author = UserSerializer(many=False, read_only=True)
