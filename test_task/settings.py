@@ -86,9 +86,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'HOST': 'abul.db.elephantsql.com',
-        'NAME': 'jdbnqgit',
-        'USER': 'jdbnqgit',
-        'PASSWORD': '5SMq8hS59XV8-1HjVEsF1retduhtPYHc',
+        'NAME': 'gycxtreg',
+        'USER': 'gycxtreg',
+        'PASSWORD': 'eNhk-Z2u9KvmoFgVNUK3jH-hAqpnbI1x',
         'PORT': '',
     }
 }
